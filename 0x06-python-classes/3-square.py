@@ -4,18 +4,17 @@
 
 class Square:
     """Represents a square
-
     Attributes:
-    __size (int): size of the sides of a square
+        __size (int): size of the sides of a square
     """
     def __init__(self, size=0):
-        """Initializes the square
+        """Initializes the Square
         Args:
-        size (int): size of the sides of square
+            size (int): size of sides of square
         Returns:
-        None
+            None
         """
-        if ype(size) is not int:
+        if type(size) is not int:
             raise TypeError("size must be an integer")
         else:
             if size < 0:
@@ -23,10 +22,9 @@ class Square:
             else:
                 self.__size = size
 
-                def area(self):
-                    """Calculates thhe square's area
-
-                    Returns:
-                    Area
-                    """
-                    return (self.__size) ** 2
+    def area(self):
+        """Calculates the square's area
+        Returns:
+            Area
+        """
+        return (self.__size) ** 2
