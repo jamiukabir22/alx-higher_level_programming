@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Create a rectangle class
+Creates a rectangle class
 """
 
 
@@ -28,8 +28,8 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """
-        defining the width setter
-        Raise a TypeError and ValueError if some conditions are not met
+        defines width setter
+        Raise a TypeError and ValueError if some conditions cannot be met
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -51,7 +51,7 @@ class Rectangle:
     def height(self, value):
         """
         The height setter
-        Raise a TypeError and ValueError if soe conditions are not met
+        Raise a TypeError and ValueError if some conditions cannot be met
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
